@@ -5,7 +5,7 @@
 [![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://github.com/CalebOwens314/caleb-owens-python-project-4/)
 [![Python](https://img.shields.io/badge/python-3.14-blue?logo=python&logoColor=white)](https://www.python.org/)
 
-> Professional Python project: exploratory data analysis with Jupyter notebooks.
+> Professional Python project: exploratory data analysis with Jupyter notebooks. (Created from Dr. Case's datafun-04-notebooks repository on GitHub.)
 
 ## Project Planning
 
@@ -27,69 +27,7 @@ you'll create a similar notebook to explore a different **tabular** data file (a
 
 ---
 
-## 01: Set Up Machine (Once Per Machine)
-
-Follow the detailed instructions at:
-[**01. Set Up Your Machine**](https://denisecase.github.io/pro-analytics-02/01-set-up-machine/)
-
-## 02: Set Up Project (Once Per Project)
-
-1. Get Repository: Sign in to GitHub, open this repository in your browser, and click **Copy this template** to get a copy in **YOURACCOUNT**.
-
-2. Configure Repository Settings:
-   - Select your repository **Settings** (the gear icon way on the right).
-   -  Go to **Pages** tab / Enable GitHub Pages / Build and deployment / set **Source** to **GitHub Actions**
-   -  Go to **Advanced Security** tab / Dependabot / **Dependabot security updates** / **Enable**
-   -  Go to **Advanced Security** tab / Dependabot / **Grouped security updates** / **Enable**
-
-3. Clone to local: Open a **machine terminal** in your **`Repos`** folder and clone your new repo.
-
-  ```shell
-  git clone https://github.com/YOURACCOUNT/datafun-04-notebooks
-  ```
-
-4. Open project in VS Code: Change directory into the repo and open the project in VS Code by running `code .` ("code dot"):
-
-  ```shell
-  cd datafun-04-notebooks
-  code .
-  ```
-
-5. Install recommended extensions.
-
-   - When VS Code opens, accept the Extension Recommendations (click **`Install All`** or similar when asked).
-
-6. Set up a project Python environment (managed by `uv`) and align VS Code with it.
-
-   - Use VS Code menu option `Terminal` / `New Terminal` to open a **VS Code terminal** in the root project folder.
-   - Run the following commands, one at a time, hitting ENTER after each:
-
-    ```shell
-    uv self update
-    uv python pin 3.14
-    uv sync --extra dev --extra docs --upgrade
-    ```
-
-If asked: "We noticed a new environment has been created. Do you want to select it for the workspace folder?" Click **"Yes"**.
-
-If successful, you'll see a new `.venv` folder appear in the root project folder.
-
-Optional (recommended): install and run pre-commit checks (repeat the git `add` and `commit` twice if needed):
-
-```shell
-uvx pre-commit install
-git add -A
-uvx pre-commit run --all-files
-git add -A
-uvx pre-commit run --all-files
-```
-
-For more detailed instructions and troubleshooting, see the pro guide at:
-[**02. Set Up Your Project**](https://denisecase.github.io/pro-analytics-02/02-set-up-project/)
-
-🛑 Do not continue until all REQUIRED steps are complete and verified.
-
-## 03: Daily Workflow (Working With Python Project Code)
+## Daily Workflow (Working With Python Project Code)
 
 Follow the detailed instructions at:
 [**03. Daily Workflow**](https://denisecase.github.io/pro-analytics-02/03-daily-workflow/)
@@ -115,6 +53,7 @@ In the same VS Code terminal, run the example Python source files as modules (pr
 
 ```shell
 uv run python -m datafun_04_notebooks.app_case
+uv run python -m datafun_04_notebooks.app_owens
 ```
 
 If a command fails, verify:
